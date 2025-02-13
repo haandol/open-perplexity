@@ -82,6 +82,8 @@ uv run -- chainlit run app.py -h
 - Separated Planner into Semantic Router and uses LLM for generating task execution parameters
 - Utilizes Reranker to process dozens of search results cost-effectively while minimizing performance degradation
 
+> While these architectural decisions introduce some latency and cost, they provide better understanding of each component and offer more granular control
+
 ![illustrate how open-perplexity works](/docs/open-perplexity.jpg)
 
 #### LangGraph State Machine
