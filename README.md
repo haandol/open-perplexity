@@ -72,7 +72,7 @@ uv run -- chainlit run app.py -h
 
 ### How Perplexity Works
 
-![illustrate how perplexity works](/docs/perplexity.png)
+![illustrate how perplexity works](/docs/perplexity.jpg)
 
 ### How Open Perplexity Works
 
