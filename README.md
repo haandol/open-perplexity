@@ -84,7 +84,7 @@ uv run -- chainlit run app.py -h
 
 ![illustrate how open-perplexity works](/docs/open-perplexity.jpg)
 
-### LangGraph State Machine
+#### LangGraph State Machine
 
 ![langgraph compiled](/docs/graph.png)
 
