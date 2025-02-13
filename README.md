@@ -70,11 +70,17 @@ uv run -- chainlit run app.py -h
 
 ## Architecture
 
+> Blue boxes represent LLM requests
+
 ### How Perplexity Works
+
 
 ![illustrate how perplexity works](/docs/perplexity.jpg)
 
 ### How Open Perplexity Works
+
+- Separated Planner into Semantic Router and uses LLM for generating task execution parameters
+- Utilizes Reranker to process dozens of search results cost-effectively while minimizing performance degradation
 
 ![illustrate how open-perplexity works](/docs/open-perplexity.jpg)
 
