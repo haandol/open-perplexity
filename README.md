@@ -64,6 +64,22 @@ Required environment variables:
 uv run -- chainlit run app.py -h
 ```
 
+### Running with Docker Compose (Arize Phoenix Tracer)
+
+1. Start Phoenix tracer using docker-compose:
+
+```bash
+docker-compose up -d
+```
+
+Phoenix UI will be available at http://localhost:6006
+
+2. Run the application with tracing enabled:
+
+```bash
+ENABLE_TRACING=true uv run -- chainlit run app.py -h
+```
+
 ### Screenshot
 
 ![screenshot](/docs/screenshot.jpg)

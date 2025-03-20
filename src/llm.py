@@ -1,3 +1,4 @@
+import os
 from typing import Optional
 
 from langchain_aws.chat_models import ChatBedrockConverse
@@ -16,7 +17,7 @@ class BedrockLLM(object):
         phoenix_project_name: Optional[str] = None,
         phoenix_endpoint: Optional[str] = None,
     ):
-        if phoenix_endpoint:
+        if os.getenv("ENABLE_TRACING", "false").lower() == "true" and phoenix_endpoint:
             # initialize Phoenix tracer
             tracer_provider = register(
                 project_name=phoenix_project_name,
